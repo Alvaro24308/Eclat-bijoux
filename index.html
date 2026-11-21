@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECLAT BIJOUX</title>
+    <style>
+        body{
+            background-color: #F5EBDD;
+        }
+        h1{
+            color: #A84F35;
+            text-align: center;
+            font-size: 42px;
+            letter-spacing: 3px;
+            margin-top: 60px;
+        }
+        p{
+            color: #29251F;
+            text-align: center;
+            font-size: 20px;
+        }
+        nav{
+            text-align: center;
+            margin-top: 25px;
+        }
+        nav a {
+            color: #29251F;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 17px;
+        }
+        nav a:hover{
+            color: #A84F35;
+        }
+        .presentation{
+            text-align: center;
+            margin-top: 80px;
+            padding: 30px;
+        }
+        .presentation h2 {
+            color: #A84F35;
+            font-size: 30px;
+        }
+        .presentation p {
+            color: #29251F;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        #collection{
+            text-align: center;
+            margin: 40px;
+            padding: 20px;
+        }
+        #collection h2{
+            color: #A84F35;
+            font-size: 30px;
+        }
+        .produits{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .produit{
+            background-color: white;
+            padding: 20px;
+            width: 22Opx;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px #00000015;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .produit:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px #00000025;
+        }
+        .produit h3{
+            color: #A84F35;
+        }
+        .produit .prix{
+            color: #A84F35;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        .produit img{
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .titre-collection{
+            text-align: center;
+            color: #A84F35;
+            font-size: 32px;
+            margin-top: 50px;
+            margin-bottom: 35px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .titre-collection::after{
+            content: "";
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: #C49A45;
+            margin: 15px auto 0;
+            border-radius: 5px;
+        }
+        .bouton-commande{
+            display: inline-block;
+            background-color: #C49A45;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .bouton-commande:hover{
+            background-color: #A84F35;
+            transform: scale(1.05);
+        }
+        #Contact {
+            text-align: center;
+            background-color: #F8F1E7;
+            padding: 50px 20px;
+            margin-top: 60px;
+            border-radius: 15px;
+        }
+        #Contact h2{
+            color: #A84F35;
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        #Contact p{
+            color: #A84F35;
+            margin-bottom: 15px;
+        }
+        @media screen and (max-Width: 600px){
+            .produits{
+                flex-direction: column;
+                align-items: center;
+            }
+            .produit{
+                width: 90%;
+                max-width: 340px;
+            }
+            .produit img{
+                width: 100%;
+                height: 200px;
+                object-fit: contain;
+            }
+            #contact{
+                margin: 30px 10px;
+                padding: 30px 15px;
+            }
+        
+        }
+        </style>
+
+</head>
+<body>
+    <h1>ECLAT BIJOUX</h1>
+    <P>Des bijoux qui révèlent ton élégances</P>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#collection">Nos bijoux</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="presentation">
+        <h2>Lélégance africaine, autrement</h2>
+        <p>Découvrez notre collection de bijoux,
+            entre tradition et modernité.
+        </p>
+        </section>
+        <section id=":collection">
+            <h2 class="titre-collection" >Notre collection</h2>
+
+            <div class="produits">
+                <div class="produit">
+                    <img src="collier.jpg.JPG" alt="collier élégance">
+                    <h3>Collier élégance</h3>
+                    <p>Un bijou raffiné pour toutes les occasions.</p>
+                    <P class="Prix">25 $</P>
+                    <a href="https://wa.me/243898296000?text=Bonjour,%20je%20souhaite%20commander%20le%20Collier%20élégance"
+                    class="bouton-commande">
+                    Commander
+                    </a>
+                    </div>
+
+                    <div class="produit">
+                        <img src="IMG_3153.jpg" alt="bracelet argenté">
+                        <h3>bracelet argenté</h3>
+                        <p>Une touchedéclat au quotidien.</p>
+                        <p class="prix">15 $</p>
+                        <a href="https://wa.me/243898296000?text=Bonjour,%20je%20souhaite%20commander%20le%20bracelet%20argenté"
+                        class="bouton-commande">
+                        Commander
+                        </a>
+                    </div>
+
+                    <div class="produit">
+                        <img src="IMG_E2739.JPG" alt="Boucles africaines">
+                        <h3>Boucles Africaines</h3>
+                        <p>Un style contemporain 
+                        inspiré de nos cultures. </p>
+                        <p class="prix">10$</p>
+                        <a href="https://wa.me/243898296000?text=Bonjour,%20je%20souhaite%20commander%20les%20%Boucles20Africaines"
+                        class="bouton-commande">
+                        Commander
+                        </a>
+                      </div>
+            </div>
+         </section>
+         <section id="Contact">
+            <h2>Contactez-nous</h2>
+            <p>Une question sur nos bijoux ? Nous sommes à votre écoute.</p>
+            <a href="https://wa.me/243898296000"
+               class="bouton-commande">
+               Nous contacter sur WhatsApp
+            </a>
+         </section>
+    
+ </body>
+</html>
